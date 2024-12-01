@@ -49,7 +49,7 @@
                         <projectName>${project.name}</projectName>
                         <outputDirectory>${project.build.directory}/cucumber-reports</outputDirectory>
                         <jsonFiles>
-                            <jsonFile>${project.build.directory}/surefire-reports/*.json</jsonFile>
+                            <jsonFile>${project.build.directory}/target/cucumber-reports/cucumber.json</jsonFile>
                         </jsonFiles>
                     </configuration>
                 </execution>
