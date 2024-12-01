@@ -33,7 +33,9 @@
                 </suiteXmlFiles>
                 <testFailureIgnore>true</testFailureIgnore>
             </configuration>
-        </plugin> <!-- Cucumber Reporting Plugin -->
+        </plugin>
+        <!-- Cucumber Reporting Plugin -->
+        <!--
         <plugin>
             <groupId>net.masterthought</groupId>
             <artifactId>maven-cucumber-reporting</artifactId>
@@ -55,6 +57,7 @@
                 </execution>
             </executions>
         </plugin>
+        -->
     </plugins>
     </build>
 
