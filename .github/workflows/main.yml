@@ -23,5 +23,8 @@ jobs:
           distribution: 'temurin'
           architecture: x64
 
+      - name: Install Maven dependencies
+        run: mvn install
+
       - name: Run Maven build
-        run: mvn clean test
+        run: mvn clean verify -DskipTests=false -e -X
