@@ -37,7 +37,7 @@ public class Base {
     }
 
     public String getProperty(String key) throws IOException {
-        FileInputStream fis = new FileInputStream("/Users/animeshsen/eclipse-workspace/MarsAir/src/test/java/practice/Test_Automation/global.properties");
+        FileInputStream fis = new FileInputStream("src/test/java/practice/Test_Automation/global.properties");
         Properties prop = new Properties();
         prop.load(fis);
         String value = prop.getProperty(key);
