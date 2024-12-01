@@ -33,3 +33,9 @@ jobs:
 
       - name: Run Maven build
         run: mvn clean verify -DskipTests=false -e -X
+
+      - name: Upload Test Reports
+        uses: actions/upload-artifact@v2
+        with:
+         name: test-reports
+         path: target/surefire-reports/
