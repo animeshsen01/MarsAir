@@ -1,0 +1,278 @@
+
+@SearchTest @ValidSearch
+Scenario Outline: Valid Search for July-JulyNextYear           [90m# src/test/java/features/SearchTest.feature:14[0m
+  [32mGiven [0m[32mI go to [0m[32m[1m"MarsAir"[0m[32m homepage[0m                             [90m# steps.SearchTestSteps.i_go_to_homepage(java.lang.String)[0m
+  [32mWhen [0m[32mI select dropdown [0m[32m[1m"departure"[0m[32m with value [0m[32m[1m"July"[0m         [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI select dropdown [0m[32m[1m"return"[0m[32m with value [0m[32m[1m"July (next year)"[0m [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI click on Search[0m                                        [90m# steps.SearchTestSteps.i_click_on_search()[0m
+  [32mThen [0m[32mI see [0m[32m[1m"seat availability"[0m                               [90m# steps.SearchTestSteps.i_see(java.lang.String)[0m
+
+@SearchTest @ValidSearch
+Scenario Outline: Valid Search for July-DecemberNextYear           [90m# src/test/java/features/SearchTest.feature:15[0m
+  [32mGiven [0m[32mI go to [0m[32m[1m"MarsAir"[0m[32m homepage[0m                                 [90m# steps.SearchTestSteps.i_go_to_homepage(java.lang.String)[0m
+  [32mWhen [0m[32mI select dropdown [0m[32m[1m"departure"[0m[32m with value [0m[32m[1m"July"[0m             [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI select dropdown [0m[32m[1m"return"[0m[32m with value [0m[32m[1m"December (next year)"[0m [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI click on Search[0m                                            [90m# steps.SearchTestSteps.i_click_on_search()[0m
+  [32mThen [0m[32mI see [0m[32m[1m"seat availability"[0m                                   [90m# steps.SearchTestSteps.i_see(java.lang.String)[0m
+
+@SearchTest @ValidSearch
+Scenario Outline: Valid Search for July-July2Years                      [90m# src/test/java/features/SearchTest.feature:16[0m
+  [32mGiven [0m[32mI go to [0m[32m[1m"MarsAir"[0m[32m homepage[0m                                      [90m# steps.SearchTestSteps.i_go_to_homepage(java.lang.String)[0m
+  [32mWhen [0m[32mI select dropdown [0m[32m[1m"departure"[0m[32m with value [0m[32m[1m"July"[0m                  [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI select dropdown [0m[32m[1m"return"[0m[32m with value [0m[32m[1m"July (two years from now)"[0m [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI click on Search[0m                                                 [90m# steps.SearchTestSteps.i_click_on_search()[0m
+  [32mThen [0m[32mI see [0m[32m[1m"seat availability"[0m                                        [90m# steps.SearchTestSteps.i_see(java.lang.String)[0m
+
+@SearchTest @ValidSearch
+Scenario Outline: Valid Search for December-DecemberNextYear       [90m# src/test/java/features/SearchTest.feature:17[0m
+  [32mGiven [0m[32mI go to [0m[32m[1m"MarsAir"[0m[32m homepage[0m                                 [90m# steps.SearchTestSteps.i_go_to_homepage(java.lang.String)[0m
+  [32mWhen [0m[32mI select dropdown [0m[32m[1m"departure"[0m[32m with value [0m[32m[1m"December"[0m         [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI select dropdown [0m[32m[1m"return"[0m[32m with value [0m[32m[1m"December (next year)"[0m [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI click on Search[0m                                            [90m# steps.SearchTestSteps.i_click_on_search()[0m
+  [32mThen [0m[32mI see [0m[32m[1m"seat availability"[0m                                   [90m# steps.SearchTestSteps.i_see(java.lang.String)[0m
+
+@SearchTest @ValidSearch
+Scenario Outline: Valid Search for December-July2Years                  [90m# src/test/java/features/SearchTest.feature:18[0m
+  [32mGiven [0m[32mI go to [0m[32m[1m"MarsAir"[0m[32m homepage[0m                                      [90m# steps.SearchTestSteps.i_go_to_homepage(java.lang.String)[0m
+  [32mWhen [0m[32mI select dropdown [0m[32m[1m"departure"[0m[32m with value [0m[32m[1m"December"[0m              [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI select dropdown [0m[32m[1m"return"[0m[32m with value [0m[32m[1m"July (two years from now)"[0m [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI click on Search[0m                                                 [90m# steps.SearchTestSteps.i_click_on_search()[0m
+  [32mThen [0m[32mI see [0m[32m[1m"seat availability"[0m                                        [90m# steps.SearchTestSteps.i_see(java.lang.String)[0m
+
+@SearchTest @ValidSearch
+Scenario Outline: Valid Search for December-December2Years                  [90m# src/test/java/features/SearchTest.feature:19[0m
+  [32mGiven [0m[32mI go to [0m[32m[1m"MarsAir"[0m[32m homepage[0m                                          [90m# steps.SearchTestSteps.i_go_to_homepage(java.lang.String)[0m
+  [32mWhen [0m[32mI select dropdown [0m[32m[1m"departure"[0m[32m with value [0m[32m[1m"December"[0m                  [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI select dropdown [0m[32m[1m"return"[0m[32m with value [0m[32m[1m"December (two years from now)"[0m [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI click on Search[0m                                                     [90m# steps.SearchTestSteps.i_click_on_search()[0m
+  [32mThen [0m[32mI see [0m[32m[1m"seat availability"[0m                                            [90m# steps.SearchTestSteps.i_see(java.lang.String)[0m
+
+@SearchTest @ValidSearch
+Scenario Outline: Valid Search for JulyNextYear-July2Years              [90m# src/test/java/features/SearchTest.feature:20[0m
+  [32mGiven [0m[32mI go to [0m[32m[1m"MarsAir"[0m[32m homepage[0m                                      [90m# steps.SearchTestSteps.i_go_to_homepage(java.lang.String)[0m
+  [32mWhen [0m[32mI select dropdown [0m[32m[1m"departure"[0m[32m with value [0m[32m[1m"July (next year)"[0m      [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI select dropdown [0m[32m[1m"return"[0m[32m with value [0m[32m[1m"July (two years from now)"[0m [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI click on Search[0m                                                 [90m# steps.SearchTestSteps.i_click_on_search()[0m
+  [32mThen [0m[32mI see [0m[32m[1m"seat availability"[0m                                        [90m# steps.SearchTestSteps.i_see(java.lang.String)[0m
+
+@SearchTest @ValidSearch
+Scenario Outline: Valid Search for JulyNextYear-December2Years              [90m# src/test/java/features/SearchTest.feature:21[0m
+  [32mGiven [0m[32mI go to [0m[32m[1m"MarsAir"[0m[32m homepage[0m                                          [90m# steps.SearchTestSteps.i_go_to_homepage(java.lang.String)[0m
+  [32mWhen [0m[32mI select dropdown [0m[32m[1m"departure"[0m[32m with value [0m[32m[1m"July (next year)"[0m          [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI select dropdown [0m[32m[1m"return"[0m[32m with value [0m[32m[1m"December (two years from now)"[0m [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI click on Search[0m                                                     [90m# steps.SearchTestSteps.i_click_on_search()[0m
+  [32mThen [0m[32mI see [0m[32m[1m"seat availability"[0m                                            [90m# steps.SearchTestSteps.i_see(java.lang.String)[0m
+
+@SearchTest @ValidSearch
+Scenario Outline: Valid Search for DecemberNextYear-December2Years          [90m# src/test/java/features/SearchTest.feature:22[0m
+  [32mGiven [0m[32mI go to [0m[32m[1m"MarsAir"[0m[32m homepage[0m                                          [90m# steps.SearchTestSteps.i_go_to_homepage(java.lang.String)[0m
+  [32mWhen [0m[32mI select dropdown [0m[32m[1m"departure"[0m[32m with value [0m[32m[1m"December (next year)"[0m      [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI select dropdown [0m[32m[1m"return"[0m[32m with value [0m[32m[1m"December (two years from now)"[0m [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI click on Search[0m                                                     [90m# steps.SearchTestSteps.i_click_on_search()[0m
+  [32mThen [0m[32mI see [0m[32m[1m"seat availability"[0m                                            [90m# steps.SearchTestSteps.i_see(java.lang.String)[0m
+
+@SearchTest @InvalidSearch @LessThanOneYear
+Scenario Outline: Invalid Search for July-July         [90m# src/test/java/features/SearchTest.feature:34[0m
+  [32mGiven [0m[32mI go to [0m[32m[1m"MarsAir"[0m[32m homepage[0m                     [90m# steps.SearchTestSteps.i_go_to_homepage(java.lang.String)[0m
+  [32mWhen [0m[32mI select dropdown [0m[32m[1m"departure"[0m[32m with value [0m[32m[1m"July"[0m [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI select dropdown [0m[32m[1m"return"[0m[32m with value [0m[32m[1m"July"[0m     [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI click on Search[0m                                [90m# steps.SearchTestSteps.i_click_on_search()[0m
+  [31mThen [0m[31mI see [0m[31m[1m"schedule not possible"[0m                   [90m# steps.SearchTestSteps.i_see(java.lang.String)[0m
+      [31mjava.lang.AssertionError: expected [Unfortunately, this schedule is not possible. Please try again.] but found [Sorry, there are no more seats available.]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at steps.SearchTestSteps.i_see(SearchTestSteps.java:77)
+	at ✽.I see "schedule not possible"(file:///Users/animeshsen/eclipse-workspace/MarsAir/src/test/java/features/SearchTest.feature:30)
+[0m
+
+    Embedding Screenshot [image/png 1473643 bytes]
+
+
+@SearchTest @InvalidSearch @LessThanOneYear
+Scenario Outline: Invalid Search for July-December     [90m# src/test/java/features/SearchTest.feature:35[0m
+  [32mGiven [0m[32mI go to [0m[32m[1m"MarsAir"[0m[32m homepage[0m                     [90m# steps.SearchTestSteps.i_go_to_homepage(java.lang.String)[0m
+  [32mWhen [0m[32mI select dropdown [0m[32m[1m"departure"[0m[32m with value [0m[32m[1m"July"[0m [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI select dropdown [0m[32m[1m"return"[0m[32m with value [0m[32m[1m"December"[0m [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI click on Search[0m                                [90m# steps.SearchTestSteps.i_click_on_search()[0m
+  [32mThen [0m[32mI see [0m[32m[1m"schedule not possible"[0m                   [90m# steps.SearchTestSteps.i_see(java.lang.String)[0m
+
+@SearchTest @InvalidSearch @LessThanOneYear
+Scenario Outline: Invalid Search for December-December     [90m# src/test/java/features/SearchTest.feature:36[0m
+  [32mGiven [0m[32mI go to [0m[32m[1m"MarsAir"[0m[32m homepage[0m                         [90m# steps.SearchTestSteps.i_go_to_homepage(java.lang.String)[0m
+  [32mWhen [0m[32mI select dropdown [0m[32m[1m"departure"[0m[32m with value [0m[32m[1m"December"[0m [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI select dropdown [0m[32m[1m"return"[0m[32m with value [0m[32m[1m"December"[0m     [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI click on Search[0m                                    [90m# steps.SearchTestSteps.i_click_on_search()[0m
+  [31mThen [0m[31mI see [0m[31m[1m"schedule not possible"[0m                       [90m# steps.SearchTestSteps.i_see(java.lang.String)[0m
+      [31mjava.lang.AssertionError: expected [Unfortunately, this schedule is not possible. Please try again.] but found [Sorry, there are no more seats available.]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at steps.SearchTestSteps.i_see(SearchTestSteps.java:77)
+	at ✽.I see "schedule not possible"(file:///Users/animeshsen/eclipse-workspace/MarsAir/src/test/java/features/SearchTest.feature:30)
+[0m
+
+    Embedding Screenshot [image/png 1473643 bytes]
+
+
+@SearchTest @InvalidSearch @LessThanOneYear
+Scenario Outline: Invalid Search for December-JulyNextYear     [90m# src/test/java/features/SearchTest.feature:37[0m
+  [32mGiven [0m[32mI go to [0m[32m[1m"MarsAir"[0m[32m homepage[0m                             [90m# steps.SearchTestSteps.i_go_to_homepage(java.lang.String)[0m
+  [32mWhen [0m[32mI select dropdown [0m[32m[1m"departure"[0m[32m with value [0m[32m[1m"December"[0m     [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI select dropdown [0m[32m[1m"return"[0m[32m with value [0m[32m[1m"July (next year)"[0m [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI click on Search[0m                                        [90m# steps.SearchTestSteps.i_click_on_search()[0m
+  [32mThen [0m[32mI see [0m[32m[1m"schedule not possible"[0m                           [90m# steps.SearchTestSteps.i_see(java.lang.String)[0m
+
+@SearchTest @InvalidSearch @LessThanOneYear
+Scenario Outline: Invalid Search for JulyNextYear-JulyNextYear     [90m# src/test/java/features/SearchTest.feature:38[0m
+  [32mGiven [0m[32mI go to [0m[32m[1m"MarsAir"[0m[32m homepage[0m                                 [90m# steps.SearchTestSteps.i_go_to_homepage(java.lang.String)[0m
+  [32mWhen [0m[32mI select dropdown [0m[32m[1m"departure"[0m[32m with value [0m[32m[1m"July (next year)"[0m [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI select dropdown [0m[32m[1m"return"[0m[32m with value [0m[32m[1m"July (next year)"[0m     [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI click on Search[0m                                            [90m# steps.SearchTestSteps.i_click_on_search()[0m
+  [31mThen [0m[31mI see [0m[31m[1m"schedule not possible"[0m                               [90m# steps.SearchTestSteps.i_see(java.lang.String)[0m
+      [31mjava.lang.AssertionError: expected [Unfortunately, this schedule is not possible. Please try again.] but found [Sorry, there are no more seats available.]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at steps.SearchTestSteps.i_see(SearchTestSteps.java:77)
+	at ✽.I see "schedule not possible"(file:///Users/animeshsen/eclipse-workspace/MarsAir/src/test/java/features/SearchTest.feature:30)
+[0m
+
+    Embedding Screenshot [image/png 1473643 bytes]
+
+
+@SearchTest @InvalidSearch @LessThanOneYear
+Scenario Outline: Invalid Search for JulyNextYear-DecemberNextYear [90m# src/test/java/features/SearchTest.feature:39[0m
+  [32mGiven [0m[32mI go to [0m[32m[1m"MarsAir"[0m[32m homepage[0m                                 [90m# steps.SearchTestSteps.i_go_to_homepage(java.lang.String)[0m
+  [32mWhen [0m[32mI select dropdown [0m[32m[1m"departure"[0m[32m with value [0m[32m[1m"July (next year)"[0m [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI select dropdown [0m[32m[1m"return"[0m[32m with value [0m[32m[1m"December (next year)"[0m [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI click on Search[0m                                            [90m# steps.SearchTestSteps.i_click_on_search()[0m
+  [32mThen [0m[32mI see [0m[32m[1m"schedule not possible"[0m                               [90m# steps.SearchTestSteps.i_see(java.lang.String)[0m
+
+@SearchTest @InvalidSearch @LessThanOneYear
+Scenario Outline: Invalid Search for DecemberNextYear-DecemberNextYear [90m# src/test/java/features/SearchTest.feature:40[0m
+  [32mGiven [0m[32mI go to [0m[32m[1m"MarsAir"[0m[32m homepage[0m                                     [90m# steps.SearchTestSteps.i_go_to_homepage(java.lang.String)[0m
+  [32mWhen [0m[32mI select dropdown [0m[32m[1m"departure"[0m[32m with value [0m[32m[1m"December (next year)"[0m [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI select dropdown [0m[32m[1m"return"[0m[32m with value [0m[32m[1m"December (next year)"[0m     [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI click on Search[0m                                                [90m# steps.SearchTestSteps.i_click_on_search()[0m
+  [31mThen [0m[31mI see [0m[31m[1m"schedule not possible"[0m                                   [90m# steps.SearchTestSteps.i_see(java.lang.String)[0m
+      [31mjava.lang.AssertionError: expected [Unfortunately, this schedule is not possible. Please try again.] but found [Sorry, there are no more seats available.]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at steps.SearchTestSteps.i_see(SearchTestSteps.java:77)
+	at ✽.I see "schedule not possible"(file:///Users/animeshsen/eclipse-workspace/MarsAir/src/test/java/features/SearchTest.feature:30)
+[0m
+
+    Embedding Screenshot [image/png 1473643 bytes]
+
+
+@SearchTest @InvalidSearch @LessThanOneYear
+Scenario Outline: Invalid Search for DecemberNextYear-July2Years        [90m# src/test/java/features/SearchTest.feature:41[0m
+  [32mGiven [0m[32mI go to [0m[32m[1m"MarsAir"[0m[32m homepage[0m                                      [90m# steps.SearchTestSteps.i_go_to_homepage(java.lang.String)[0m
+  [32mWhen [0m[32mI select dropdown [0m[32m[1m"departure"[0m[32m with value [0m[32m[1m"December (next year)"[0m  [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI select dropdown [0m[32m[1m"return"[0m[32m with value [0m[32m[1m"July (two years from now)"[0m [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI click on Search[0m                                                 [90m# steps.SearchTestSteps.i_click_on_search()[0m
+  [32mThen [0m[32mI see [0m[32m[1m"schedule not possible"[0m                                    [90m# steps.SearchTestSteps.i_see(java.lang.String)[0m
+
+@SearchTest @InvalidSearch @LessThanOneYear
+Scenario Outline: Invalid Search for July2Years-July2Years                  [90m# src/test/java/features/SearchTest.feature:42[0m
+  [32mGiven [0m[32mI go to [0m[32m[1m"MarsAir"[0m[32m homepage[0m                                          [90m# steps.SearchTestSteps.i_go_to_homepage(java.lang.String)[0m
+  [32mWhen [0m[32mI select dropdown [0m[32m[1m"departure"[0m[32m with value [0m[32m[1m"July (two years from now)"[0m [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI select dropdown [0m[32m[1m"return"[0m[32m with value [0m[32m[1m"July (two years from now)"[0m     [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI click on Search[0m                                                     [90m# steps.SearchTestSteps.i_click_on_search()[0m
+  [31mThen [0m[31mI see [0m[31m[1m"schedule not possible"[0m                                        [90m# steps.SearchTestSteps.i_see(java.lang.String)[0m
+      [31mjava.lang.AssertionError: expected [Unfortunately, this schedule is not possible. Please try again.] but found [Sorry, there are no more seats available.]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at steps.SearchTestSteps.i_see(SearchTestSteps.java:77)
+	at ✽.I see "schedule not possible"(file:///Users/animeshsen/eclipse-workspace/MarsAir/src/test/java/features/SearchTest.feature:30)
+[0m
+
+    Embedding Screenshot [image/png 1473643 bytes]
+
+
+@SearchTest @InvalidSearch @LessThanOneYear
+Scenario Outline: Invalid Search for July2Years-December2Years              [90m# src/test/java/features/SearchTest.feature:43[0m
+  [32mGiven [0m[32mI go to [0m[32m[1m"MarsAir"[0m[32m homepage[0m                                          [90m# steps.SearchTestSteps.i_go_to_homepage(java.lang.String)[0m
+  [32mWhen [0m[32mI select dropdown [0m[32m[1m"departure"[0m[32m with value [0m[32m[1m"July (two years from now)"[0m [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI select dropdown [0m[32m[1m"return"[0m[32m with value [0m[32m[1m"December (two years from now)"[0m [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI click on Search[0m                                                     [90m# steps.SearchTestSteps.i_click_on_search()[0m
+  [32mThen [0m[32mI see [0m[32m[1m"schedule not possible"[0m                                        [90m# steps.SearchTestSteps.i_see(java.lang.String)[0m
+
+@SearchTest @InvalidSearch @LessThanOneYear
+Scenario Outline: Invalid Search for December2Years-December2Years              [90m# src/test/java/features/SearchTest.feature:44[0m
+  [32mGiven [0m[32mI go to [0m[32m[1m"MarsAir"[0m[32m homepage[0m                                              [90m# steps.SearchTestSteps.i_go_to_homepage(java.lang.String)[0m
+  [32mWhen [0m[32mI select dropdown [0m[32m[1m"departure"[0m[32m with value [0m[32m[1m"December (two years from now)"[0m [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI select dropdown [0m[32m[1m"return"[0m[32m with value [0m[32m[1m"December (two years from now)"[0m     [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI click on Search[0m                                                         [90m# steps.SearchTestSteps.i_click_on_search()[0m
+  [31mThen [0m[31mI see [0m[31m[1m"schedule not possible"[0m                                            [90m# steps.SearchTestSteps.i_see(java.lang.String)[0m
+      [31mjava.lang.AssertionError: expected [Unfortunately, this schedule is not possible. Please try again.] but found [Sorry, there are no more seats available.]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at steps.SearchTestSteps.i_see(SearchTestSteps.java:77)
+	at ✽.I see "schedule not possible"(file:///Users/animeshsen/eclipse-workspace/MarsAir/src/test/java/features/SearchTest.feature:30)
+[0m
+
+    Embedding Screenshot [image/png 1473643 bytes]
+
+
+@SearchTest @InvalidSearch @FutureDeparture
+Scenario Outline: Invalid Search for FutureDeparture       [90m# src/test/java/features/SearchTest.feature:56[0m
+  [32mGiven [0m[32mI go to [0m[32m[1m"MarsAir"[0m[32m homepage[0m                         [90m# steps.SearchTestSteps.i_go_to_homepage(java.lang.String)[0m
+  [32mWhen [0m[32mI select dropdown [0m[32m[1m"departure"[0m[32m with value [0m[32m[1m"December"[0m [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI select dropdown [0m[32m[1m"return"[0m[32m with value [0m[32m[1m"July"[0m         [90m# steps.SearchTestSteps.i_select_dropdown_with_value(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mI click on Search[0m                                    [90m# steps.SearchTestSteps.i_click_on_search()[0m
+  [31mThen [0m[31mI see [0m[31m[1m"schedule not possible"[0m                       [90m# steps.SearchTestSteps.i_see(java.lang.String)[0m
+      [31mjava.lang.AssertionError: expected [Unfortunately, this schedule is not possible. Please try again.] but found [Sorry, there are no more seats available.]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at steps.SearchTestSteps.i_see(SearchTestSteps.java:77)
+	at ✽.I see "schedule not possible"(file:///Users/animeshsen/eclipse-workspace/MarsAir/src/test/java/features/SearchTest.feature:52)
+[0m
+
+    Embedding Screenshot [image/png 1473643 bytes]
+
+
+@SearchTest @InvalidSearch @WithOutDepartureReturn
+Scenario Outline: Invalid Search for WithOutDepartureReturn [90m# src/test/java/features/SearchTest.feature:66[0m
+  [32mGiven [0m[32mI go to [0m[32m[1m"MarsAir"[0m[32m homepage[0m                          [90m# steps.SearchTestSteps.i_go_to_homepage(java.lang.String)[0m
+  [32mAnd [0m[32mI click on Search[0m                                     [90m# steps.SearchTestSteps.i_click_on_search()[0m
+  [31mThen [0m[31mI see [0m[31m[1m"schedule not possible"[0m                        [90m# steps.SearchTestSteps.i_see(java.lang.String)[0m
+      [31mjava.lang.AssertionError: expected [Unfortunately, this schedule is not possible. Please try again.] but found [Sorry, there are no more seats available.]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at steps.SearchTestSteps.i_see(SearchTestSteps.java:77)
+	at ✽.I see "schedule not possible"(file:///Users/animeshsen/eclipse-workspace/MarsAir/src/test/java/features/SearchTest.feature:62)
+[0m
+
+    Embedding Screenshot [image/png 1473643 bytes]
+
