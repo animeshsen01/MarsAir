@@ -35,7 +35,7 @@ jobs:
         run: mvn clean verify -DskipTests=false -e -X
 
       - name: Upload Test Reports
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
          name: test-reports
          path: target/surefire-reports/
