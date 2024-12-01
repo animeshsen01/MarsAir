@@ -10,7 +10,12 @@ import practice.Test_Automation.Base;
 @CucumberOptions(
         features = "src/test/java/features", // Ensure this path is correct
         glue = "steps", // Ensure this path is correct
-        plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
+        plugin = {
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+                "json:target/cucumber-reports/cucumber.json",
+                "pretty:target/cucumber-reports/cucumber-pretty.txt",
+                "html:target/cucumber-reports/cucumber-html-report.html",
+        },
         tags = "@SearchTest"
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
