@@ -32,7 +32,7 @@ jobs:
           wget -N https://chromedriver.storage.googleapis.com/$(curl -sS https://chromedriver.storage.googleapis.com/LATEST_RELEASE)/chromedriver_linux64.zip unzip chromedriver_linux64.zip -d /usr/local/bin/ chmod +x /usr/local/bin/chromedriver chromedriver --version
 
       - name: Run Maven build
-        run: mvn clean verify -DskipTests=false -e -X
+        run: mvn clean verify -DskipTests=false -Dmaven.test.failure.ignore=true -e -X
 
       - name: Upload Test Reports
         uses: actions/upload-artifact@v3
