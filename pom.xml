@@ -47,7 +47,9 @@
                     <configuration>
                         <projectName>${project.name}</projectName>
                         <outputDirectory>${project.build.directory}/cucumber-reports</outputDirectory>
-                        <sourceFile>${project.build.directory}/surefire-reports/cucumber.json</sourceFile>
+                        <jsonFiles>
+                            <jsonFile>${project.build.directory}/surefire-reports/*.json</jsonFile>
+                        </jsonFiles>
                     </configuration>
                 </execution>
             </executions>
