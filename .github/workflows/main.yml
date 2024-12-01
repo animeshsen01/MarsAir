@@ -35,7 +35,7 @@ jobs:
         run: mkdir -p /home/runner/.m2/
 
       - name: Copy settings-security.xml
-        run: cp /Users/animeshsen/eclipse-workspace/MarsAir/settings-security.xml /home/runner/.m2/settings-security.xml
+        run: cp $GITHUB_WORKSPACE/settings-security.xml /home/runner/.m2/settings-security.xml
 
       - name: Run Maven build
         run: mvn clean verify -DskipTests=false -Dmaven.test.failure.ignore=true -e -X
